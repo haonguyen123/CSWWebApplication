@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Apache SIS Catalogue</title>
+	<!--    Google Fonts-->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+    <!--Fontawesom-->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+    <!--Animated CSS-->
+    <link rel="stylesheet" type="text/css" href="css/animate.min.css">
+	<!-- Boostrap 4  CSS -->
+    <!-- <link href="css/bootstrap.min.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+	<!--Bootstrap Carousel-->
+    <!-- Bootstrap -->
+    <!-- <link href="css/bootstrap.min.css" rel="stylesheet"> -->
+    <link type="text/css" rel="stylesheet" href="css/carousel.css" />
+
+    <link rel="stylesheet" href="css/isotope/style.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+    <!--Main Stylesheet-->
+    <link href="css/style.css" rel="stylesheet">
+    <!--Responsive Framework-->
+    <link href="css/responsive.css" rel="stylesheet">
+    <!-- Leaflet -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.3/dist/leaflet.css"
+   integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ=="
+   crossorigin=""/>
+   <!-- Leaflet draw -->
+   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.draw/1.0.2/leaflet.draw.css">
+   <!-- Make sure you put this AFTER Leaflet's CSS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+ <script src="https://unpkg.com/leaflet@1.3.3/dist/leaflet.js"
+   integrity="sha512-tAGcCfR4Sc5ZP5ZoVz0quoZDYX5aCtEm/eu1KhSLj2c9eFrylXZknQYmxUssFaVJKvvc0dJQixhGjG2yXWiV9Q=="
+   crossorigin=""></script>
+</head>
+<body data-spy="scroll" data-target="#header">
+
+        <!--Start Hedaer Section-->
+        <section id="header">
+            <div class="header-area">
+                <div class="top_header">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 zero_mp">
+                                <div class="address">
+                                    <i class="fa fa-home floatleft"></i>
+                                    <p>Apache Spatial Information System </p>
+                                </div>
+                            </div>
+                            <!--End of col-md-4-->
+                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 zero_mp">
+                                <div class="phone">
+                                    <i class="fa fa-phone floatleft"></i>
+                                    <p></p>
+                                </div>
+                            </div>
+                            <!--End of col-md-4-->
+                            <div class="col-md-4">
+                                <div class="social_icon text-right">
+                                    <a href=""><i class="fab fa-facebook-f"></i></a>
+                                    <a href=""><i class="fab fa-twitter"></i></a>
+                                    <a href=""><i class="fab fa-google-plus-g"></i></a>
+                                    <a href=""><i class="fab fa-youtube"></i></a>
+                                </div>
+                            </div>
+                            <!--End of col-md-4-->
+                        </div>
+                        <!--End of row-->
+                    </div>
+                    <!--End of container-->
+                </div>
+                <!--End of top header-->
+                <div class="header_menu text-center" data-spy="affix" data-offset-top="50" id="nav">
+                    <div class="container">
+                        <nav class="navbar navbar-expand-lg navbar-light ">
+                          <a class="navbar-brand custom_navbar-brand" href="#"><img src="img/sis_logo_small.png"></a>
+                          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                          </button>
+                          <div class="collapse navbar-collapse" id="navbarText">
+                            <ul class="navbar-nav  ml-auto main_menu zero_mp">
+                              <li class="nav-item active">
+                                <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link" href="/usergui.html">User GUI</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link" href="/contact.html">Contact</a>
+                              </li>
+                            </ul>
+                          </div>
+                        </nav>
+                        <!--End of nav-->
+                    </div>
+                    <!--End of container-->
+                </div>
+                <!--End of header menu-->
+            </div>
+            <!--end of header area-->
+        </section>
+        <!--End of Hedaer Section-->
+
+        
+        <section id="map_section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="box-hold">
+                            <div class="input-group mb-3">
+                              <div class="input-group-prepend">
+                                <span class="input-group-text" id="btn-hold-location"><i class="fas fa-map-marked-alt"></i></span>
+                                <span class="input-group-text" id="btn-hold-result"><i class="fas fa-list-alt"></i></span>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="search-container">
+                        <div class="input-group mb-3 search_group">
+                          <div class="input-group-prepend">
+                            <select id="type_search">
+                                <option value ="1">AnyText</option>
+                                <option value ="2">FiQl</option>
+                            </select>
+                          </div>
+                          <input type="text" id="text_search" class="form-control search_text" placeholder="Search ..." aria-label="Text input with dropdown button">
+                          <div class="input-group-append">
+                            <span class="input-group-text" id="btn-search-text" ><i class="fa fa-search"></i></span>
+                          </div>
+                        </div>
+                        
+                    </div>
+                    </div>
+                    <div class="col-md-3">
+                       <div class="box-coord">
+                            <div class="input-group mb-3">
+                              <div class="input-group-prepend">
+                                <p>Lng: <span id="lng"></span> Lat: <span id="lat"></span> </p>
+                              </div>
+                            </div>
+                        </div> 
+                    </div>
+                    
+                </div>
+            <div class="row">
+                <div class="col-md-4">
+
+                    <div class="row info-search" id="box-search">
+                        <!-- Start Extends search -->
+                        <div class="col-md-12"><label for="exampleInputEmail1"><h4>RecordIds</h4></label></div>
+                        <div class="col-md-12 ">
+                            <div class="form-group">
+                            
+                                <input type="text" class="form-control" id="recordids" aria-describedby="RecordIds" placeholder="Recordid 1, Recordid 2,...">
+                         <!--    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+                            </div>
+                        </div>
+                        <!-- <div class="col-md-12">
+                        
+                        </div> -->
+                        <div class="col-md-12">
+                            <label for="exampleInputEmail1"><h4>Spatial</h4></label>
+                            <br>
+                            <input type="radio" class="geo-select" name="geo-select" value="1"><label for="exampleInputEmail1"><h6>Extends</h6></label>
+                        
+                            <div class="row" id="bbox-group">
+                                <div class="col-md-6 ">
+                                <div class="form-group">
+                                    
+                                    <input type="text" class="form-control" id="min_lng" aria-describedby="Min Longitude" placeholder="Min Lng">
+                                 <!--    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+                                  </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" id="min_lat" aria-describedby="Min Latitude" placeholder="Min Lat">
+                                     <!--    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+                                      </div>
+                                </div>
+                                <div class="col-md-6 ">
+                                    <div class="form-group">
+                                        
+                                        <input type="text" class="form-control" id="max_lng" aria-describedby="Max Longitude" placeholder="Max Lng">
+                                     <!--    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+                                      </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" id="max_lat" aria-describedby="Max Latitude" placeholder="Max Lat">
+                                     <!--    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+                                      </div>
+                                </div>
+                            </div>
+                            
+                            
+                        </div>
+                        <div class="col-md-12 ">
+                            <input type="radio" class="geo-select" name="geo-select" value="2">
+                            <label for="exampleInputEmail1"><h6>Geometry</h6></label>
+                            <div class="form-group" id="geometrys">
+                                <input type="text" class="form-control" id="geometry" aria-describedby="geometry(wkt)" placeholder="POLYGON ((105.28675 17.72754,105.28675 19.83546,107.45539 19.83546,107.45539 17.72754,105.28675 17.72754))">
+                         <!--    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+                            </div>
+                        </div>
+                        <div class="col-md-12 relations" >
+                            <label for="exampleInputEmail1"><h6>Relation</h6></label>
+                            
+                            <select class="form-control" id="relation">
+                                <option value="intersects">Intersects</option>
+                                <option value="equals">Equals</option>
+                                <option value="touches">Touches</option>
+                                <option value="contains">Contains</option>
+                                <option value="crosses">Crosses</option>
+                                <option value="disjoint">Disjoint</option>
+                                <option value="overlaps">Overlaps</option>
+                                <option value="within">Within</option>
+                            </select>
+                        </div>
+                        
+                        
+                <!-- End Extends search -->
+                        <div class="col-md-12"><label for="exampleInputEmail1"><h4>Time</h4></label></div>
+                        <div class="col-md-6 ">
+                            <div class="form-group">
+                            
+                                <input type="date" class="form-control" id="start_date" aria-describedby="Max Latitude" placeholder="Max Lat">
+                         <!--    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <input type="date" class="form-control" id="end_date" aria-describedby="Max Latitude" placeholder="Max Lat">
+                             <!--    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+                              </div>
+                        </div>
+                        <button type="submit" id="btn_search_extend" class="btn btn-danger btn_search">Search</button>
+                    </div>
+                </div>
+                <div class="col-md-1">
+                    
+                </div>
+                <div class="col-md-7">
+                    <!-- Start result data -->
+                    <div data-spy="scroll" class="search_result" id="result-box" data-offset="0">
+                        <label id="name_list">
+                            <h4>List Data</h4>
+                            <p>About <span id="number_result"></span> datasets found </p>
+
+                        </label>
+                        <p style="float: right;padding-right: 20px;" id="side_sortby">
+                            Sort by
+                            <span >
+                                <select id="sortby"> 
+                                    <option value="modified:D">
+                                        DES Date 
+                                    </option>
+                                    <option value="modified:A">
+                                        ADS Date 
+                                    </option>
+                                </select>
+                            </span>
+                        </p>
+                        <div class="result_table"> 
+
+                        </div>
+                        <div class='container wrapper'>
+                            <p id='pagination-here'></p>
+                        </div>
+                    </div>
+
+              <!-- End result data -->
+                </div>
+            </div>
+            </div>
+            <div id="mapid"></div>
+        </section>
+            
+        
+        <!--Start of footer-->
+        <section id="footer">
+            <div class="container">
+                <div class="row text-center">
+                    <div class="col-md-6">
+                        <div class="copyright">
+                            <p>@ 2018 - Design By <span><a href=""> Hao Nguyen</a></span></p>
+                        </div>
+                    </div>
+                </div>
+                <!--End of row-->
+            </div>
+            <!--End of container-->
+        </section>
+        <!--End of footer-->
+        <!-- </div> -->
+
+
+        <!--Scroll to top-->
+        <a href="#" id="back-to-top" title="Back to top">&uarr;</a>
+        <!--End of Scroll to top-->
+
+
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <!-- <script src='http://c4.171.184.127flare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>-->
+        <script src="js/jquery-1.12.3.min.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+        <!--Counter UP Waypoint-->
+        <script src="js/waypoints.min.js"></script>
+        <!--Counter UP-->
+        <script src="js/jquery.counterup.min.js"></script>
+        <!-- Leaflet draw -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.draw/1.0.2/leaflet.draw.js"></script>
+        <script>
+            //for counter up
+            $('.counter').counterUp({
+                delay: 10,
+                time: 1000
+            });
+            $( function() {
+                $( "#box-search" ).draggable();
+              } );
+            $( function() {
+                $( "#result-box" ).draggable();
+              } );
+            $( function() {
+                $( "#btn-hold-location" ).on( "click", function() {
+                    // console.log("ok");
+                    $("#box-search").slideToggle( "slow" );          
+                } );
+                $( "#btn-hold-result" ).on( "click", function() {
+                    // console.log("ok");
+                    $("#result-box").slideToggle( "slow" );          
+                } );
+                
+              } );
+            $( function() {
+                $("#geometrys").hide();
+                $(".relations").hide();
+                $("#bbox-group").show();
+                $( ".geo-select" ).on( "click", function() {
+                  console.log($( "input:checked" ).val()) ;
+                  if ($( "input:checked" ).val() == 1) {
+                    $("#geometrys").hide();
+                    $(".relations").hide();
+                    $("#bbox-group").show();
+                  }
+                  else if ($( "input:checked" ).val() == 2) {
+                    $("#geometrys").show();
+                    $(".relations").show();
+                    $("#bbox-group").hide();
+                  }
+                });
+            });
+            // All record
+            var ip = "http://14.170.168.192:9000/";
+            var type_search;
+            var q;
+            var id;
+            var time;
+            var bbox;
+            var recordids;
+            var mapfit;
+            var sort;
+            var constraintlanguage;
+            var constraint;
+            var geometry;
+            var relation;
+            $(document).ready(function(){
+              $(".result_table").append("<ul class='list-group' id='UList' ></ul>");
+              $.get({
+                url: ip+"csw?request=GetRecords&service=CSW",
+                dataType: "xml",
+                crossDomain: true,
+                success: function(xml){
+                $(xml).find('csw\\:SearchResults').each(function(){
+                    var size = $(this).attr("numberOfRecordsMatched");
+                    $("#number_result").text(size);
+                    // Do whatever you want to do with circulation
+                });
+                $(xml).find('csw\\:Record').each(function(){
+                  var identifier = $(this).find('dc\\:identifier').text();
+                  var title = $(this).find('dc\\:title').text();
+                  var creator = $(this).find('dc\\:creator').text();
+                  var format = $(this).find('dc\\:format').text();
+                  $("<li class='list-group-item' value='"+identifier+"'></li>")
+                  .html("<p class='title'>"+identifier+"</p>"+
+                        "<p class='description'>Title: "+title+"</p>"+
+                        "<p class='description'>Original: "+creator+"</p>")
+                  .appendTo(".result_table ul ");
+
+                });
+                
+              },
+              error: function() {
+                alert("An error occurred while processing XML file.");
+              }
+              });
+              
+              // Search when click search button in search text
+              $("#btn-search-text").on("click",function(e){
+                e.preventDefault();
+                if (mapfit != undefined) {
+                      map.removeLayer(mapfit);
+                };
+                $("#name_list").show();
+                $("#side_sortby").show();
+                $(".wrapper").show();
+                $(".detail").remove();
+                $(".result_table").empty();
+                $(".result_table").append("<ul class='list-group' id='UList' ></ul>");
+                type_search = $("#type_search").val();
+                if (type_search == 1 ) {
+                    q = $("#text_search").val();
+                    constraint = "";
+                    constraintlanguage ="";
+                }
+                if (type_search == 2 ) {
+                    q = "";
+                    constraint = $("#text_search").val();
+                    constraintlanguage ="FIQL"
+                }
+                   
+                   $.get({
+                        url: ip+"csw",
+                        data:{
+                            request : "GetRecords",
+                            service : "CSW",
+                            q       : q,
+                            constraint : constraint,
+                            constraintlanguage : constraintlanguage,
+                        },
+                        dataType: "xml",
+                        crossDomain: true,
+                        success: function(xml){
+                        $(xml).find('csw\\:SearchResults').each(function(){
+                            var size = $(this).attr("numberOfRecordsMatched");
+                            $("#number_result").text(size);
+                            // Do whatever you want to do with circulation
+                        });
+                        $(xml).find('csw\\:Record').each(function(){
+                          var identifier = $(this).find('dc\\:identifier').text();
+                          var title = $(this).find('dc\\:title').text();
+                          var creator = $(this).find('dc\\:creator').text();
+                          var format = $(this).find('dc\\:format').text();
+                          $("<li class='list-group-item' value='"+identifier+"'></li>")
+                          .html("<p class='title'>"+identifier+"</p>"+
+                                "<p class='description'>Title: "+title+"</p>"+
+                                "<p class='description'>Original: "+creator+"</p>")
+                          .appendTo(".result_table ul ");
+
+                        });
+                          },
+                          error: function() {
+                            alert("An error occurred while processing XML file.");
+                        }
+                    }); 
+                   
+                    
+
+                
+              });
+              // Search when click search in side bar extends
+              $("#btn_search_extend").on("click",function(e){
+                e.preventDefault();
+                if (mapfit != undefined) {
+                      map.removeLayer(mapfit);
+                };
+                $(".result_table").empty();
+                $(".detail").remove();
+                $("#name_list").show();
+                $("#side_sortby").show();
+                $(".wrapper").show();
+                $(".result_table").append("<ul class='list-group' id='UList' ></ul>");
+                if ($("#min_lng").val() !== "" && $("#min_lat").val() !== "" && $("#max_lng").val() !== "" && $("#max_lat").val() !== ""  ) {
+                    bbox = $("#min_lng").val() +","+$("#min_lat").val()+","+$("#max_lng").val()+","+$("#max_lat").val();
+                }
+                if ($("#min_lng").val() === "" || $("#min_lat").val() === "" || $("#max_lng").val() === "" || $("#max_lat").val() === "") {
+                    bbox = "";
+                }
+                if ($("#geometry").val() !== "" ) {
+                    geometry = $("#geometry").val() ;
+                }
+                if ($("#geometry").val() === "" ) {
+                    geometry= "";
+                }
+                if ($("#start_date").val()!=="") {
+                    time = $("#start_date").val();
+                }
+                if ($("#end_date").val() !=="") {
+                    time = $("#end_date").val();
+                }
+                if ($("#start_date").val()!=="" && $("#end_date").val() !=="" ) {
+                    time = $("#start_date").val()+"/"+$("#end_date").val();
+                }
+                if ($("#start_date").val() === ""&& $("#start_date").val() === "") {
+                    time = "";
+                }
+                if (type_search == 1 ) {
+                    q = $("#text_search").val();
+                    constraint = "";
+                    constraintlanguage ="";
+                }
+                if (type_search == 2 ) {
+                    q = "";
+                    constraint = $("#text_search").val();
+                    constraintlanguage ="FIQL"
+                }
+                if ($("#recordids").val()!=="") {
+                  recordids = $("#recordids").val();
+                }
+                relation = $("#relation").val();
+                console.log(relation);
+                console.log(geometry);
+                $.get({
+                    url: ip+"csw",
+                    data:{
+                        request : "GetRecords",
+                        service : "CSW",
+                        q       : q,
+                        recordids:recordids,
+                        time : time,
+                        bbox : bbox,
+                        constraint : constraint,
+                        constraintlanguage : constraintlanguage,
+                        geometry:geometry,
+                        relation:relation,
+                    },
+                    dataType: "xml",
+                    crossDomain: true,
+                    success: function(xml){
+                    $(xml).find('csw\\:SearchResults').each(function(){
+                        var size = $(this).attr("numberOfRecordsMatched");
+                        $("#number_result").text(size);
+                        // Do whatever you want to do with circulation
+                    });
+                    $(xml).find('csw\\:Record').each(function(){
+                      var identifier = $(this).find('dc\\:identifier').text();
+                      var title = $(this).find('dc\\:title').text();
+                      var creator = $(this).find('dc\\:creator').text();
+                      var format = $(this).find('dc\\:format').text();
+                      $("<li class='list-group-item' value='"+identifier+"'></li>")
+                      .html("<p class='title'>"+identifier+"</p>"+
+                            "<p class='description'>Title: "+title+"</p>"+
+                            "<p class='description'>Original: "+creator+"</p>")
+                      .appendTo(".result_table ul ");
+
+                    });
+                      },
+                      error: function() {
+                        alert("An error occurred while processing XML file.");
+                    }
+                }); 
+                });
+              // GetRecord by id when click identifier 
+
+
+                $("#sortby").change(function(e){
+                    e.preventDefault();
+                    sort = $(this).val();
+                    $(".wrapper").show();
+                    $(".result_table").empty();
+                    // $("#UList").hide();
+                    $(".result_table").append("<ul class='list-group' id='UList' ></ul>");
+                    $.get({
+                        url: ip+"csw",
+                        dataType: "xml",
+                        data :{
+                            request:"GetRecords",
+                            service:"CSW",
+                            q :q ,
+                            sortby : sort,
+                            time : time,
+                            bbox:bbox,
+                            recordids : recordids,
+                            constraint : constraint,
+                            constraintlanguage : constraintlanguage,
+                            geometry:geometry,
+                            relation:relation,
+                        },
+                        crossDomain: true,
+                        success: function(xml){
+                            $(xml).find('csw\\:SearchResults').each(function(){
+                                var size = $(this).attr("numberOfRecordsMatched");
+                                $("#number_result").text(size);
+                                // Do whatever you want to do with circulation
+                            });
+                            $(xml).find('csw\\:Record').each(function(){
+                              var identifier = $(this).find('dc\\:identifier').text();
+                              var title = $(this).find('dc\\:title').text();
+                              var creator = $(this).find('dc\\:creator').text();
+                              var format = $(this).find('dc\\:format').text();
+                              $("<li class='list-group-item' value='"+identifier+"'></li>")
+                              .html("<p class='title'>"+identifier+"</p>"+
+                                    "<p class='description'>Title: "+title+"</p>"+
+                                    "<p class='description'>Original: "+creator+"</p>")
+                              .appendTo(".result_table ul ");
+
+                            });
+                        },
+                        error: function() {
+                        alert("An error occurred while processing XML file.");
+                        }
+                    });
+                });
+            //end sort
+                $('#pagination-here').bootpag({
+                    total: 10,          
+                    page: 1,            
+                    maxVisible: 5,     
+                    leaps: true,
+                }).on("page", function(event,  num){
+                    event.preventDefault();
+                    $(".result_table").empty();
+                    $(".result_table").append("<ul class='list-group' id='UList' ></ul>");
+                    $.get({
+                        url: ip+"csw",
+                        dataType: "xml",
+                        data :{
+                            request:"GetRecords",
+                            service:"CSW",
+                            q :q ,
+                            sortby : sort,
+                            time : time,
+                            bbox:bbox,
+                            recordids : recordids,
+                            startposition : num,
+                            constraint : constraint,
+                            constraintlanguage : constraintlanguage,
+                            geometry:geometry,
+                            relation:relation,
+                        },
+                        crossDomain: true,
+                        success: function(xml){
+                            $(xml).find('csw\\:SearchResults').each(function(){
+                                var size = $(this).attr("numberOfRecordsMatched");
+                                $("#number_result").text(size);
+                                // Do whatever you want to do with circulation
+                            });
+                            $(xml).find('csw\\:Record').each(function(){
+                              var identifier = $(this).find('dc\\:identifier').text();
+                              var title = $(this).find('dc\\:title').text();
+                              var creator = $(this).find('dc\\:creator').text();
+                              var format = $(this).find('dc\\:format').text();
+                              $("<li class='list-group-item' value='"+identifier+"'></li>")
+                              .html("<p class='title'>"+identifier+"</p>"+
+                                    "<p class='description'>Title: "+title+"</p>"+
+                                    "<p class='description'>Original: "+creator+"</p>")
+                              .appendTo(".result_table ul ");
+
+                            });
+                        },
+                        error: function() {
+                        alert("An error occurred while processing XML file.");
+                        }
+                    });
+                }); 
+            });
+            $("#result-box").on("click","#return_data",function(){
+                $(".detail").remove();
+                $("#UList").show();
+                $("#name_list").toggle();
+                $("#side_sortby").show();
+                $(".wrapper").show();
+            });
+            function filter_array(test_array) {
+                var index = -1,
+                    arr_length = test_array ? test_array.length : 0,
+                    resIndex = -1,
+                    result = [];
+                while (++index < arr_length) {
+                    var value = test_array[index];
+                    if (value) {
+                        result[++resIndex] = value;
+                    }
+                }
+                return result;
+            }
+        </script>
+
+
+        <!--Isotope-->
+        <script src="js/isotope/min/scripts-min.js"></script>
+        <script src="js/isotope/cells-by-row.js"></script>
+        <script src="js/isotope/isotope.pkgd.min.js"></script>
+        <script src="js/isotope/packery-mode.pkgd.min.js"></script>
+        <script src="js/isotope/scripts.js"></script>
+
+        <script src="js/ulist.js"></script>
+        <!--Back To Top-->
+        <script src="js/backtotop.js"></script>
+
+
+        <!--JQuery Click to Scroll down with Menu-->
+        <script src="js/jquery.localScroll.min.js"></script>
+        <script src="js/jquery.scrollTo.min.js"></script>
+        <!--WOW With Animation-->
+        <script src="js/wow.min.js"></script>
+        <!--WOW Activated-->
+        <script>
+            new WOW().init();
+        </script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-bootpag/1.0.4/jquery.bootpag.min.js"></script>
+
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="js/bootstrap.min.js"></script>
+        <!-- Custom JavaScript-->
+        <script src="js/main.js"></script>
+        <script src="js/leafletmap.js"></script>
+    </body>
+</html>
